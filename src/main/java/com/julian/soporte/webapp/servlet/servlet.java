@@ -16,7 +16,16 @@ public class servlet extends HttpServlet {
 
         PrintWriter out = response.getWriter();
 
-
+        out.println("<!DOCTYPE html>");
+        out.println("<html>");
+        out.println("	<head>");
+        out.println("		<meta charset=\"UTF-8\">");
+        out.println("		<title>hola mundo desde servlet</title>");
+        out.println("	</head>");
+        out.println("	<body>");
+        out.println("		<h1>Este servlet te dice Hola!!</h1>");
+        out.println("	</body>");
+        out.println("</html>");
 
     }
 
